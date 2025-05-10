@@ -84,7 +84,7 @@ Bài toán 8-puzzle có một số đặc điểm quan trọng:
 ### Các thuật toán tìm kiếm
 Các thuật toán tìm kiếm được phân loại thành các nhóm chính:
 
-1. **Thuật toán không có thông tin (Uninformed Search)**: Không sử dụng kiến thức về bài toán ngoài định nghĩa của nó. ## Demo ứng dụng
+1. **Thuật toán không có thông tin (Uninformed Search)**: Không sử dụng kiến thức về bài toán ngoài định nghĩa của nó.
 2. **Thuật toán có thông tin (Informed Search)**: Sử dụng kiến thức đặc thù về bài toán để cải thiện hiệu suất tìm kiếm.
 4. **Thuật toán tìm kiếm cục bộ (Local Search)**: Duy trì một hoặc một số trạng thái hiện tại thay vì duy trì cây tìm kiếm.
 5. **Thuật toán thỏa mãn ràng buộc (CSP)**: Giải quyết bài toán bằng cách đáp ứng các ràng buộc giữa các biến.
@@ -103,6 +103,7 @@ Dự án được tổ chức thành các module chức năng:
 - `Complex_Environments.py`: Triển khai các thuật toán cho môi trường phức tạp
 - `Puzzle_GUI.py`: Triển khai giao diện đồ họa người dùng
 - `main.py`: Điểm vào cho ứng dụng
+- `plot_comparison.py` và `collect_result`: Thực hiện việc đánh giá và hiệu suất của thuật toán trong 1 nhóm theo từng case
 
 ### Công nghệ sử dụng
 - **Ngôn ngữ lập trình**: Python 3.6+
