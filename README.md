@@ -256,7 +256,12 @@ Dự án được tổ chức thành các module chức năng:
 - **Hill Climbing**: Nhanh nhưng dễ bị mắc kẹt ở cực tiểu cục bộ
 - **Simulated Annealing**: Thoát khỏi cực tiểu cục bộ tốt hơn
 - **Genetic Algorithm**: Tìm kiếm rộng nhưng có thể chậm hội tụ
-- **CSP và RL**: Cung cấp các phương pháp tiếp cận khác, phù hợp cho các biến thể phức tạp hơn của bài toán
+### Thuật toán tìm kiếm CSP
+- **Backtracking** : Nhanh nhưng không đảm bảo luôn tìm ra giải pháp và tối ưu
+- **Forward checking** : Không đảm bảo luôn tìm ra giải pháp
+- **Min-conflic(labeling)**: nhanh nhưng có thể bị mắc kẹt ở cực tiểu cục bộ, yêu cầu kiểm tra tính khả thi của cấu hình
+- ![Demo 8-puzzer](CSPs.gif)
+
 
 ## HƯỚNG DẪN SỬ DỤNG
 
