@@ -89,6 +89,7 @@ Các thuật toán tìm kiếm được phân loại thành các nhóm chính:
 ![Demo 8-puzzer](unniform.gif)
 
 2. **Thuật toán có thông tin (Informed Search)**: Sử dụng kiến thức đặc thù về bài toán để cải thiện hiệu suất tìm kiếm.
+   
 ![Demo 8-puzzer](informed_.gif)
 
 4. **Thuật toán tìm kiếm cục bộ (Local Search)**: Duy trì một hoặc một số trạng thái hiện tại thay vì duy trì cây tìm kiếm.
