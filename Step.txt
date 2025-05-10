@@ -1,0 +1,278 @@
+Algorithm: BELIEF_STATE
+
+========================================
+
+Step 0/10
+Current Belief States:
+Belief State 1:
+1 2 3 
+4   8 
+7 6 5 
+
+Belief State 2:
+1 3 6 
+4   2 
+7 5 8 
+
+Belief State 3:
+3 5   
+2 1 4 
+7 8 6 
+
+Belief State 4:
+2 4 3 
+7 1 6 
+5 8   
+
+
+------------------------------
+Step 1/10
+Move: LEFT
+Current Belief States:
+Belief State 1:
+1 2 3 
+  4 8 
+7 6 5 
+
+Belief State 2:
+1 3 6 
+  4 2 
+7 5 8 
+
+Belief State 3:
+3   5 
+2 1 4 
+7 8 6 
+
+Belief State 4:
+2 4 3 
+7 1 6 
+5   8 
+
+
+------------------------------
+Step 2/10
+Move: LEFT
+Current Belief States:
+Belief State 1:
+  3 5 
+2 1 4 
+7 8 6 
+
+Belief State 2:
+2 4 3 
+7 1 6 
+  5 8 
+
+Belief State 3 (same as State 1)
+  3 5 
+2 1 4 
+7 8 6 
+
+Belief State 4 (same as State 1)
+  3 5 
+2 1 4 
+7 8 6 
+
+
+------------------------------
+Step 3/10
+Move: UP
+Current Belief States:
+Belief State 1:
+2 4 3 
+  1 6 
+7 5 8 
+
+Belief State 2 (same as State 1)
+2 4 3 
+  1 6 
+7 5 8 
+
+Belief State 3 (same as State 1)
+2 4 3 
+  1 6 
+7 5 8 
+
+Belief State 4 (same as State 1)
+2 4 3 
+  1 6 
+7 5 8 
+
+
+------------------------------
+Step 4/10
+Move: RIGHT
+Current Belief States:
+Belief State 1:
+2 4 3 
+1   6 
+7 5 8 
+
+Belief State 2 (same as State 1)
+2 4 3 
+1   6 
+7 5 8 
+
+Belief State 3 (same as State 1)
+2 4 3 
+1   6 
+7 5 8 
+
+Belief State 4 (same as State 1)
+2 4 3 
+1   6 
+7 5 8 
+
+
+------------------------------
+Step 5/10
+Move: UP
+Current Belief States:
+Belief State 1:
+2   3 
+1 4 6 
+7 5 8 
+
+Belief State 2 (same as State 1)
+2   3 
+1 4 6 
+7 5 8 
+
+Belief State 3 (same as State 1)
+2   3 
+1 4 6 
+7 5 8 
+
+Belief State 4 (same as State 1)
+2   3 
+1 4 6 
+7 5 8 
+
+
+------------------------------
+Step 6/10
+Move: LEFT
+Current Belief States:
+Belief State 1:
+  2 3 
+1 4 6 
+7 5 8 
+
+Belief State 2 (same as State 1)
+  2 3 
+1 4 6 
+7 5 8 
+
+Belief State 3 (same as State 1)
+  2 3 
+1 4 6 
+7 5 8 
+
+Belief State 4 (same as State 1)
+  2 3 
+1 4 6 
+7 5 8 
+
+
+------------------------------
+Step 7/10
+Move: DOWN
+Current Belief States:
+Belief State 1:
+1 2 3 
+  4 6 
+7 5 8 
+
+Belief State 2 (same as State 1)
+1 2 3 
+  4 6 
+7 5 8 
+
+Belief State 3 (same as State 1)
+1 2 3 
+  4 6 
+7 5 8 
+
+Belief State 4 (same as State 1)
+1 2 3 
+  4 6 
+7 5 8 
+
+
+------------------------------
+Step 8/10
+Move: RIGHT
+Current Belief States:
+Belief State 1:
+1 2 3 
+4   6 
+7 5 8 
+
+Belief State 2 (same as State 1)
+1 2 3 
+4   6 
+7 5 8 
+
+Belief State 3 (same as State 1)
+1 2 3 
+4   6 
+7 5 8 
+
+Belief State 4 (same as State 1)
+1 2 3 
+4   6 
+7 5 8 
+
+
+------------------------------
+Step 9/10
+Move: DOWN
+Current Belief States:
+Belief State 1:
+1 2 3 
+4 5 6 
+7   8 
+
+Belief State 2 (same as State 1)
+1 2 3 
+4 5 6 
+7   8 
+
+Belief State 3 (same as State 1)
+1 2 3 
+4 5 6 
+7   8 
+
+Belief State 4 (same as State 1)
+1 2 3 
+4 5 6 
+7   8 
+
+
+------------------------------
+Step 10/10
+Move: RIGHT
+Current Belief States:
+Belief State 1:
+1 2 3 
+4 5 6 
+7 8   
+
+Belief State 2 (same as State 1)
+1 2 3 
+4 5 6 
+7 8   
+
+Belief State 3 (same as State 1)
+1 2 3 
+4 5 6 
+7 8   
+
+Belief State 4 (same as State 1)
+1 2 3 
+4 5 6 
+7 8   
+
+
+------------------------------
