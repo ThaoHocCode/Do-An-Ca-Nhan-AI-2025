@@ -85,7 +85,10 @@ Bài toán 8-puzzle có một số đặc điểm quan trọng:
 ### Các thuật toán tìm kiếm
 Các thuật toán tìm kiếm được phân loại thành các nhóm chính:
 
-1. **Thuật toán không có thông tin (Uninformed Search)**: Không sử dụng kiến thức về bài toán ngoài định nghĩa của nó.
+1. **Thuật toán không có thông tin (Uninformed Search)**: Không sử dụng kiến thức về bài toán ngoài định nghĩa của nó. ## Demo ứng dụng
+
+![Demo](images/unniform.gif)
+
 2. **Thuật toán có thông tin (Informed Search)**: Sử dụng kiến thức đặc thù về bài toán để cải thiện hiệu suất tìm kiếm.
 3. **Thuật toán tìm kiếm cục bộ (Local Search)**: Duy trì một hoặc một số trạng thái hiện tại thay vì duy trì cây tìm kiếm.
 4. **Thuật toán thỏa mãn ràng buộc (CSP)**: Giải quyết bài toán bằng cách đáp ứng các ràng buộc giữa các biến.
