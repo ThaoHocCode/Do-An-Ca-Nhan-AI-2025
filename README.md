@@ -90,10 +90,12 @@ Các thuật toán tìm kiếm được phân loại thành các nhóm chính:
 ![Demo 8-puzzer](unniform.gif)
 
 2. **Thuật toán có thông tin (Informed Search)**: Sử dụng kiến thức đặc thù về bài toán để cải thiện hiệu suất tìm kiếm.
-3. **Thuật toán tìm kiếm cục bộ (Local Search)**: Duy trì một hoặc một số trạng thái hiện tại thay vì duy trì cây tìm kiếm.
-4. **Thuật toán thỏa mãn ràng buộc (CSP)**: Giải quyết bài toán bằng cách đáp ứng các ràng buộc giữa các biến.
-5. **Thuật toán học tăng cường (Reinforcement Learning)**: Học từ tương tác với môi trường.
-6. **Thuật toán cho môi trường phức tạp**: Xử lý các môi trường không xác định hoặc chỉ quan sát được một phần.
+![Demo 8-puzzer](informed.gif)
+
+4. **Thuật toán tìm kiếm cục bộ (Local Search)**: Duy trì một hoặc một số trạng thái hiện tại thay vì duy trì cây tìm kiếm.
+5. **Thuật toán thỏa mãn ràng buộc (CSP)**: Giải quyết bài toán bằng cách đáp ứng các ràng buộc giữa các biến.
+6. **Thuật toán học tăng cường (Reinforcement Learning)**: Học từ tương tác với môi trường.
+7. **Thuật toán cho môi trường phức tạp**: Xử lý các môi trường không xác định hoặc chỉ quan sát được một phần.
 
 ## THIẾT KẾ VÀ CÀI ĐẶT
 
