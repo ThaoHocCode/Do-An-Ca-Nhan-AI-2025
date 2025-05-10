@@ -7,8 +7,8 @@
 - **Môn học:** Trí tuệ nhân tạo
 - **Học kỳ:** 2 - Năm học 2024-2025
 -**Giảng viên hướng dẫn:** TS.Phan Thị Huyền Trang
-**Môn học:** Trí Tuệ Nhân Tạo
-**Lớp học phần:** ARIN330585_05
+-**Môn học:** Trí Tuệ Nhân Tạo
+-**Lớp học phần:** ARIN330585_05
 
 - **Sinh viên thực hiện:** Lê Thị Thảo
 - **Mã số sinh viên:** 23110321
