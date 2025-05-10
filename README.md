@@ -85,13 +85,7 @@ Bài toán 8-puzzle có một số đặc điểm quan trọng:
 Các thuật toán tìm kiếm được phân loại thành các nhóm chính:
 
 1. **Thuật toán không có thông tin (Uninformed Search)**: Không sử dụng kiến thức về bài toán ngoài định nghĩa của nó. ## Demo ứng dụng
-
-![Demo 8-puzzer](unniform.gif)
-
 2. **Thuật toán có thông tin (Informed Search)**: Sử dụng kiến thức đặc thù về bài toán để cải thiện hiệu suất tìm kiếm.
-   
-![Demo 8-puzzer](informed_.gif)
-
 4. **Thuật toán tìm kiếm cục bộ (Local Search)**: Duy trì một hoặc một số trạng thái hiện tại thay vì duy trì cây tìm kiếm.
 5. **Thuật toán thỏa mãn ràng buộc (CSP)**: Giải quyết bài toán bằng cách đáp ứng các ràng buộc giữa các biến.
 6. **Thuật toán học tăng cường (Reinforcement Learning)**: Học từ tương tác với môi trường.
@@ -249,18 +243,18 @@ Dự án được tổ chức thành các module chức năng:
 - **DFS**: Hiệu quả về bộ nhớ nhưng có thể tìm được giải pháp không tối ưu
 - **UCS**: Giải pháp tối ưu, nhưng có thể khám phá nhiều nút không cần thiết
 - **IDS**: Kết hợp ưu điểm của BFS và DFS, dù có chi phí từ việc khám phá lặp lại
-
+![Demo 8-puzzer](unniform.gif)
 ### Thuật toán có thông tin
 - **Greedy**: Rất nhanh, nhưng không đảm bảo tối ưu
 - **A***: Cân bằng tốt giữa tốc độ và tối ưu
 - **IDA***: Tiết kiệm bộ nhớ hơn A* nhưng vẫn tối ưu
-
+![Demo 8-puzzer](informed_.gif)
 ### Thuật toán tìm kiếm cục bộ và các loại khác
 - **Hill Climbing**: Nhanh nhưng dễ bị mắc kẹt ở cực tiểu cục bộ
 - **Simulated Annealing**: Thoát khỏi cực tiểu cục bộ tốt hơn
 - **Genetic Algorithm**: Tìm kiếm rộng nhưng có thể chậm hội tụ
 - **CSP và RL**: Cung cấp các phương pháp tiếp cận khác, phù hợp cho các biến thể phức tạp hơn của bài toán
-
+- Được đánh giá qua từng case phù hợp với nhóm thuật toán. Sử dụng collect_result.py sẽ thực hiện chạy và lưu kết quả vào file JSON. Sau đó plot_comparison sẽ thực hiện so sánh những thuật toán cùng 1 nhóm.Và lưu thành hình ảnh
 ## HƯỚNG DẪN SỬ DỤNG
 
 ### Yêu cầu hệ thống
