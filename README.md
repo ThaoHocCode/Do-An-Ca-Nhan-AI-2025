@@ -1,7 +1,6 @@
 # BÁO CÁO ĐỒ ÁN
 # ỨNG DỤNG CÁC THUẬT TOÁN TÌM KIẾM TRONG TRÍ TUỆ NHÂN TẠO VÀO BÀI TOÁN 8-PUZZLE
 
-![8-puzzle](https://i.imgur.com/example-image.png) *(hình ảnh có thể được thay thế)*
 
 ## THÔNG TIN ĐỒ ÁN
 - **Tên đồ án:** Ứng dụng các thuật toán tìm kiếm AI vào bài toán 8-puzzle
