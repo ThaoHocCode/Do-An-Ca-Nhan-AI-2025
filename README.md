@@ -1,4 +1,4 @@
-# BÁO CÁO ĐỒ ÁN
+# BÁO CÁO ĐỒ ÁN CÁ NHÂN
 # ỨNG DỤNG CÁC THUẬT TOÁN TÌM KIẾM TRONG TRÍ TUỆ NHÂN TẠO VÀO BÀI TOÁN 8-PUZZLE
 
 ## THÔNG TIN ĐỒ ÁN
