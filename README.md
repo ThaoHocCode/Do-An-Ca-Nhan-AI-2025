@@ -225,16 +225,6 @@ Dự án được tổ chức thành các module chức năng:
 - **Tính chất**: Admissible (không bao giờ ước lượng cao)
 - **Ưu điểm**: Hiệu suất tốt cho bài toán 8-puzzle, cân bằng giữa tính đơn giản và tính thông tin
 
-### 2. Ô Sai Vị Trí (Misplaced Tiles)
-- **Mô tả**: Đếm số ô không nằm đúng vị trí đích
-- **Tính chất**: Admissible, đơn giản nhưng ít thông tin hơn Khoảng cách Manhattan
-- **Ưu điểm**: Dễ tính toán
-
-### 3. Xung Đột Tuyến Tính (Linear Conflict)
-- **Mô tả**: Mở rộng từ Khoảng cách Manhattan, thêm phạt cho các ô nằm đúng hàng/cột nhưng sai thứ tự
-- **Tính chất**: Admissible, cung cấp nhiều thông tin hơn Manhattan
-- **Ưu điểm**: Thường dẫn đến giải pháp nhanh hơn do ước lượng gần hơn với chi phí thực
-
 ## ĐÁNH GIÁ VÀ SO SÁNH HIỆU SUẤT
 
 ### Thuật toán không có thông tin
