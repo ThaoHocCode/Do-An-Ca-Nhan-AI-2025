@@ -248,7 +248,7 @@ Dự án được tổ chức thành các module chức năng:
 - **Backtracking** : Nhanh nhưng không đảm bảo luôn tìm ra giải pháp và tối ưu
 - **Forward checking** : Không đảm bảo luôn tìm ra giải pháp
 - **Min-conflic(labeling)**: nhanh nhưng có thể bị mắc kẹt ở cực tiểu cục bộ, yêu cầu kiểm tra tính khả thi của cấu hình
-![Kết quả CSP](results/CSP.gif)
+![Kết quả CSP](results/CSPs.gif)
 
 
 ## HƯỚNG DẪN SỬ DỤNG
