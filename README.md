@@ -244,9 +244,11 @@ Dự án được tổ chức thành các module chức năng:
 - **Q-Learning**: Tối ưu tốt hơn về dài hạn, nhưng cần nhiều thời gian học và dễ lệch nếu khám phá không hợp lý.
 ![Kết quả CSP](results/Reinforcement.gif)
 ### Thuật toán tìm kiếm cục bộ 
-- **Hill Climbing**: Nhanh nhưng dễ bị mắc kẹt ở cực tiểu cục bộ
+- **Simple Hill Climbing**: Nhanh nhưng dễ bị mắc kẹt ở cực tiểu cục bộ
 - **Simulated Annealing**: Thoát khỏi cực tiểu cục bộ tốt hơn
-- **Genetic Algorithm**: Tìm kiếm rộng nhưng có thể chậm hội tụ
+- **Beam Search**: Giữ nhiều nhánh tốt cùng lúc, giảm rủi ro kẹt cục bộ nhưng phụ thuộc mạnh vào tham số beam width.
+- **Stochastic Hill Climbing**: Giảm nguy cơ kẹt cục bộ nhờ chọn hướng ngẫu nhiên, nhưng không đảm bảo tìm được lời giải tối ưu.
+- ![Kết quả CSP](results/LOCAL.gif)
 ### Thuật toán tìm kiếm CSP
 - **Backtracking** : Nhanh nhưng không đảm bảo luôn tìm ra giải pháp và tối ưu
 - **Forward checking** : Không đảm bảo luôn tìm ra giải pháp
