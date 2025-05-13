@@ -146,23 +146,31 @@ Dự án được tổ chức thành các module chức năng:
 - **Nguyên lý**: Kết hợp tìm kiếm lặp sâu với tìm kiếm A*
 - **Ưu điểm**: Sử dụng ít bộ nhớ hơn A* nhưng vẫn tìm được đường đi tối ưu
 - **Nhược điểm**: Có thể chậm hơn A* do phải duyệt lại nhiều nút
-
 ### Thuật toán tìm kiếm cục bộ
-#### 1. Thuật Toán Di Truyền (Genetic Algorithm)
-- **Nguyên lý**: Mô phỏng quá trình tiến hóa tự nhiên, duy trì một quần thể các giải pháp và áp dụng các toán tử lai ghép, đột biến
-- **Ưu điểm**: Có khả năng thoát khỏi cực tiểu cục bộ
-- **Nhược điểm**: Không đảm bảo tìm được giải pháp tối ưu
 
-#### 2. Leo Đồi (Hill Climbing) và Biến Thể
-- **Nguyên lý**: Thuật toán tìm kiếm cục bộ đơn giản, chỉ di chuyển đến trạng thái tốt hơn
-- **Biến thể**: Simple, Steepest Ascent, Stochastic Hill Climbing
-- **Ưu điểm**: Đơn giản, ít tốn bộ nhớ
-- **Nhược điểm**: Dễ bị mắc kẹt ở cực tiểu cục bộ
+#### 1. Leo Đồi Đơn Giản (Simple Hill Climbing)
+
+* **Nguyên lý**: Luôn di chuyển đến trạng thái lân cận có giá trị tốt hơn ngay lập tức
+* **Ưu điểm**: Đơn giản, tốc độ nhanh
+* **Nhược điểm**: Dễ bị mắc kẹt tại cực tiểu cục bộ, không lùi lại được
+
+#### 2. Leo Đồi Ngẫu Nhiên (Stochastic Hill Climbing)
+
+* **Nguyên lý**: Chọn ngẫu nhiên một trong các trạng thái lân cận tốt hơn, thay vì chọn tốt nhất
+* **Ưu điểm**: Giảm khả năng bị kẹt tại cực tiểu cục bộ
+* **Nhược điểm**: Không đảm bảo tìm được giải pháp tối ưu, phụ thuộc vào may rủi trong lựa chọn
 
 #### 3. Mô Phỏng Luyện Kim (Simulated Annealing)
-- **Nguyên lý**: Cho phép chấp nhận các di chuyển xấu hơn với xác suất giảm dần
-- **Ưu điểm**: Có thể tìm được giải pháp gần tối ưu cho các bài toán phức tạp
-- **Nhược điểm**: Không đảm bảo tìm được giải pháp tối ưu
+
+* **Nguyên lý**: Cho phép chấp nhận trạng thái tệ hơn với xác suất giảm dần theo thời gian
+* **Ưu điểm**: Có khả năng thoát khỏi cực tiểu cục bộ, tìm được lời giải gần tối ưu
+* **Nhược điểm**: Cần điều chỉnh tham số nhiệt độ hợp lý, không đảm bảo tìm tối ưu
+
+#### 4. Beam Search
+
+* **Nguyên lý**: Giữ lại một số lượng giới hạn (beam width) các trạng thái tốt nhất tại mỗi bước tìm kiếm
+* **Ưu điểm**: Tìm kiếm song song nhiều hướng, giảm nguy cơ kẹt ở vùng xấu
+* **Nhược điểm**: Dễ bỏ sót lời giải tối ưu nếu beam width quá nhỏ, tốn bộ nhớ nếu quá lớn
 
 ### Thuật toán CSP
 #### 1. Quay Lui (Backtracking)
@@ -192,12 +200,7 @@ Dự án được tổ chức thành các module chức năng:
 - **Ưu điểm**: Không cần mô hình môi trường, có khả năng hội tụ
 - **Nhược điểm**: Chậm hội tụ với không gian trạng thái lớn
 
-#### 2. Mạng Q Sâu (DQN)
-- **Nguyên lý**: Kết hợp Q-Learning với mạng nơ-ron sâu
-- **Ưu điểm**: Xử lý được các không gian trạng thái phức tạp
-- **Nhược điểm**: Phức tạp để cài đặt và điều chỉnh
-
-#### 3. SARSA và Độ Dốc Chính Sách (Policy Gradient)
+#### 2. SARSA và Độ Dốc Chính Sách (Policy Gradient)
 - **Nguyên lý**: SARSA cập nhật dựa trên chính sách thực tế; Policy Gradient tối ưu hóa trực tiếp chính sách
 - **Ưu điểm**: Phù hợp với các loại môi trường khác nhau
 - **Nhược điểm**: Có thể chậm hội tụ hoặc không ổn định
