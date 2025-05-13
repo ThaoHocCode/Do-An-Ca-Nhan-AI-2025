@@ -258,6 +258,11 @@ Dự án được tổ chức thành các module chức năng:
 - **Min-conflic(labeling)**: nhanh nhưng có thể bị mắc kẹt ở cực tiểu cục bộ, yêu cầu kiểm tra tính khả thi của cấu hình
 ![Kết quả CSP](results/CSPs.gif)
 
+### Thuật toán tìm kiếm cho môi trường phức tạp
+- **Tìm kiếm cây AND-OR**: Giải được bài toán nhưng tốn tài nguyên do tạo kế hoạch dư thừa.
+- **Tìm kiếm trong môi trường quan sát một phần**: Không cần thiết vì trạng thái luôn được quan sát đầy đủ.
+- **Tìm kiếm trạng thái niềm tin**: Rất chậm và tốn bộ nhớ vì không có sự không chắc chắn cần xử lý.
+![Kết quả CSP](results/Complex.gif)
 
 ## HƯỚNG DẪN SỬ DỤNG
 
