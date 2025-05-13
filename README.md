@@ -1,4 +1,4 @@
-# BÁO CÁO ĐỒ ÁN
+# BÁO CÁO ĐỒ ÁN CÁ NHÂN
 # ỨNG DỤNG CÁC THUẬT TOÁN TÌM KIẾM TRONG TRÍ TUỆ NHÂN TẠO VÀO BÀI TOÁN 8-PUZZLE
 
 ## THÔNG TIN ĐỒ ÁN
@@ -225,16 +225,6 @@ Dự án được tổ chức thành các module chức năng:
 - **Tính chất**: Admissible (không bao giờ ước lượng cao)
 - **Ưu điểm**: Hiệu suất tốt cho bài toán 8-puzzle, cân bằng giữa tính đơn giản và tính thông tin
 
-### 2. Ô Sai Vị Trí (Misplaced Tiles)
-- **Mô tả**: Đếm số ô không nằm đúng vị trí đích
-- **Tính chất**: Admissible, đơn giản nhưng ít thông tin hơn Khoảng cách Manhattan
-- **Ưu điểm**: Dễ tính toán
-
-### 3. Xung Đột Tuyến Tính (Linear Conflict)
-- **Mô tả**: Mở rộng từ Khoảng cách Manhattan, thêm phạt cho các ô nằm đúng hàng/cột nhưng sai thứ tự
-- **Tính chất**: Admissible, cung cấp nhiều thông tin hơn Manhattan
-- **Ưu điểm**: Thường dẫn đến giải pháp nhanh hơn do ước lượng gần hơn với chi phí thực
-
 ## ĐÁNH GIÁ VÀ SO SÁNH HIỆU SUẤT
 
 ### Thuật toán không có thông tin
@@ -256,7 +246,12 @@ Dự án được tổ chức thành các module chức năng:
 - **Hill Climbing**: Nhanh nhưng dễ bị mắc kẹt ở cực tiểu cục bộ
 - **Simulated Annealing**: Thoát khỏi cực tiểu cục bộ tốt hơn
 - **Genetic Algorithm**: Tìm kiếm rộng nhưng có thể chậm hội tụ
-- **CSP và RL**: Cung cấp các phương pháp tiếp cận khác, phù hợp cho các biến thể phức tạp hơn của bài toán
+### Thuật toán tìm kiếm CSP
+- **Backtracking** : Nhanh nhưng không đảm bảo luôn tìm ra giải pháp và tối ưu
+- **Forward checking** : Không đảm bảo luôn tìm ra giải pháp
+- **Min-conflic(labeling)**: nhanh nhưng có thể bị mắc kẹt ở cực tiểu cục bộ, yêu cầu kiểm tra tính khả thi của cấu hình
+- ![Demo 8-puzzer](CSPs.gif)
+
 
 ## HƯỚNG DẪN SỬ DỤNG
 
@@ -330,4 +325,3 @@ Các hướng phát triển trong tương lai:
 1. Russell, S. J., & Norvig, P. (2020). Artificial Intelligence: A Modern Approach (4th Edition). Pearson.
 2. Korf, R. E. (1985). Depth-first iterative-deepening: An optimal admissible tree search. Artificial Intelligence, 27(1), 97-109.
 3. Hart, P. E., Nilsson, N. J., & Raphael, B. (1968). A formal basis for the heuristic determination of minimum cost paths. IEEE Transactions on Systems Science and Cybernetics, 4(2), 100-107.
-4. [Thêm các tài liệu tham khảo khác] 
