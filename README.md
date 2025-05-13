@@ -242,7 +242,7 @@ Dự án được tổ chức thành các module chức năng:
 ### Thuật toán học tăng cường
 - **SARSA**: Học ổn định, an toàn hơn nhưng dễ rơi vào phương án không tối ưu nếu không khám phá đủ.
 - **Q-Learning**: Tối ưu tốt hơn về dài hạn, nhưng cần nhiều thời gian học và dễ lệch nếu khám phá không hợp lý.
-![Kết quả CSP](results/reinforcement.gif)
+![Kết quả CSP](results/Reinforcement.gif)
 ### Thuật toán tìm kiếm cục bộ 
 - **Hill Climbing**: Nhanh nhưng dễ bị mắc kẹt ở cực tiểu cục bộ
 - **Simulated Annealing**: Thoát khỏi cực tiểu cục bộ tốt hơn
