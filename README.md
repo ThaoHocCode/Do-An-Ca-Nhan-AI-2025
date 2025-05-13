@@ -5,9 +5,9 @@
 - **Tên đồ án:** Ứng dụng các thuật toán tìm kiếm AI vào bài toán 8-puzzle
 - **Môn học:** Trí tuệ nhân tạo
 - **Học kỳ:** 2 - Năm học 2024-2025
--**Giảng viên hướng dẫn:** TS.Phan Thị Huyền Trang
-**Môn học:** Trí Tuệ Nhân Tạo
-**Lớp học phần:** ARIN330585_05
+- **Giảng viên hướng dẫn:** TS.Phan Thị Huyền Trang
+- **Môn học:** Trí Tuệ Nhân Tạo
+- **Lớp học phần:** ARIN330585_05
 
 - **Sinh viên thực hiện:** Lê Thị Thảo
 - **Mã số sinh viên:** 23110321
@@ -228,19 +228,17 @@ Dự án được tổ chức thành các module chức năng:
 ## ĐÁNH GIÁ VÀ SO SÁNH HIỆU SUẤT
 
 ### Thuật toán không có thông tin
-![Demo 8-puzzer](unniform.gif)
-
 - **BFS**: Thường nhanh đối với 8-puzzle, đảm bảo giải pháp tối ưu, nhưng sử dụng nhiều bộ nhớ
 - **DFS**: Hiệu quả về bộ nhớ nhưng có thể tìm được giải pháp không tối ưu
 - **UCS**: Giải pháp tối ưu, nhưng có thể khám phá nhiều nút không cần thiết
 - **IDS**: Kết hợp ưu điểm của BFS và DFS, dù có chi phí từ việc khám phá lặp lại
+![Kết quả CSP](results/unniform.gif)
 
 ### Thuật toán có thông tin
-![Demo 8-puzzer](informed_.gif)
-
 - **Greedy**: Rất nhanh, nhưng không đảm bảo tối ưu
 - **A***: Cân bằng tốt giữa tốc độ và tối ưu
 - **IDA***: Tiết kiệm bộ nhớ hơn A* nhưng vẫn tối ưu
+![Kết quả CSP](results/informed_.gif)
 
 ### Thuật toán tìm kiếm cục bộ và các loại khác
 - **Hill Climbing**: Nhanh nhưng dễ bị mắc kẹt ở cực tiểu cục bộ
@@ -250,7 +248,7 @@ Dự án được tổ chức thành các module chức năng:
 - **Backtracking** : Nhanh nhưng không đảm bảo luôn tìm ra giải pháp và tối ưu
 - **Forward checking** : Không đảm bảo luôn tìm ra giải pháp
 - **Min-conflic(labeling)**: nhanh nhưng có thể bị mắc kẹt ở cực tiểu cục bộ, yêu cầu kiểm tra tính khả thi của cấu hình
-- ![Demo 8-puzzer](CSPs.gif)
+![Kết quả CSP](results/CSPs.gif)
 
 
 ## HƯỚNG DẪN SỬ DỤNG
