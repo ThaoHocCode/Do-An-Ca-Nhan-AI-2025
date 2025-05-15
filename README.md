@@ -245,17 +245,17 @@ Dự án được tổ chức thành các module chức năng:
 - **Greedy**: Rất nhanh, nhưng không đảm bảo tối ưu
 - **A***: Cân bằng tốt giữa tốc độ và tối ưu
 - **IDA***: Tiết kiệm bộ nhớ hơn A* nhưng vẫn tối ưu
-![Kết quả CSP](results/informed_.gif)
+![Kết quả UNINF](results/informed_.gif)
 ### Thuật toán học tăng cường
 - **SARSA**: Học ổn định, an toàn hơn nhưng dễ rơi vào phương án không tối ưu nếu không khám phá đủ.
 - **Q-Learning**: Tối ưu tốt hơn về dài hạn, nhưng cần nhiều thời gian học và dễ lệch nếu khám phá không hợp lý.
-![Kết quả CSP](results/Reinforcement.gif)
+![Kết quả REINFORCE](results/Reinforcement.gif)
 ### Thuật toán tìm kiếm cục bộ 
 - **Simple Hill Climbing**: Nhanh nhưng dễ bị mắc kẹt ở cực tiểu cục bộ
 - **Simulated Annealing**: Thoát khỏi cực tiểu cục bộ tốt hơn
 - **Beam Search**: Giữ nhiều nhánh tốt cùng lúc, giảm rủi ro kẹt cục bộ nhưng phụ thuộc mạnh vào tham số beam width.
 - **Stochastic Hill Climbing**: Giảm nguy cơ kẹt cục bộ nhờ chọn hướng ngẫu nhiên, nhưng không đảm bảo tìm được lời giải tối ưu.
-- ![Kết quả CSP](results/LOCAL.gif)
+- ![Kết quả LOCAL](results/LOCAL.gif)
 ### Thuật toán tìm kiếm CSP
 - **Backtracking** : Nhanh nhưng không đảm bảo luôn tìm ra giải pháp và tối ưu
 - **Forward checking** : Không đảm bảo luôn tìm ra giải pháp
@@ -266,7 +266,7 @@ Dự án được tổ chức thành các module chức năng:
 - **Tìm kiếm cây AND-OR**: Giải được bài toán nhưng tốn tài nguyên do tạo kế hoạch dư thừa.
 - **Tìm kiếm trong môi trường quan sát một phần**: Không cần thiết vì trạng thái luôn được quan sát đầy đủ.
 - **Tìm kiếm trạng thái niềm tin**: Rất chậm và tốn bộ nhớ vì không có sự không chắc chắn cần xử lý.
-![Kết quả CSP](results/complex.gif)
+![Kết quả COMPLEX](results/complex.gif)
 
 ## HƯỚNG DẪN SỬ DỤNG
 
