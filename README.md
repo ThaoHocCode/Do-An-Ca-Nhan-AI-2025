@@ -257,7 +257,7 @@ Dự án được tổ chức thành các module chức năng:
 - **Stochastic Hill Climbing**: Giảm nguy cơ kẹt cục bộ nhờ chọn hướng ngẫu nhiên, nhưng không đảm bảo tìm được lời giải tối ưu.
 - ![Kết quả LOCAL](results/LOCAL.gif)
 ### Thuật toán tìm kiếm CSP
-- **Backtracking** : Nhanh nhưng không đảm bảo luôn tìm ra giải pháp và tối ưu
+- **Backtracking** : Nhanh nhưng không đảm bảo luôn tìm ra giải pháp và tối ưu, thưa cô ở phần video em trình bày bị lỗi , nên em xin phép chèn thêm ở Readme ạ.
 ![Kết quả CSP](results/QuayLui.gif)
 - **Forward checking** : Không đảm bảo luôn tìm ra giải pháp
 - **Min-conflic(labeling)**: nhanh nhưng có thể bị mắc kẹt ở cực tiểu cục bộ, yêu cầu kiểm tra tính khả thi của cấu hình
