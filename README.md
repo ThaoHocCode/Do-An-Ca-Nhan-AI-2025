@@ -324,7 +324,7 @@ python main.py
 
 Đồ án đã triển khai và so sánh một loạt các thuật toán tìm kiếm AI khi áp dụng vào bài toán 8-puzzle. Các kết quả cho thấy:
 
-1. Thuật toán A* với heuristic Linear Conflict thường đạt hiệu suất tốt nhất về tỉ lệ tối ưu/tốc độ
+1. Thuật toán A* với heuristic thường đạt hiệu suất tốt nhất về tỉ lệ tối ưu/tốc độ
 2. Các thuật toán tìm kiếm cục bộ như Simulated Annealing có thể là lựa chọn tốt cho các trạng thái phức tạp
 3. Các thuật toán học tăng cường cần thời gian huấn luyện nhưng có thể hoạt động tốt sau khi được huấn luyện
 
