@@ -1,0 +1,186 @@
+Algorithm: BELIEF_STATE
+
+========================================
+
+Giải pháp sử dụng BELIEF_STATE
+
+Số bước di chuyển: 6
+
+========================================
+
+Bước 0/6
+Trạng thái ban đầu
+Chi tiết: Trạng thái ban đầu (4 niềm tin)
+Số trạng thái khác nhau: 4/4
+
+Belief State 1
+  1 2 
+7 5 3 
+8 4 6 
+
+Belief State 2
+2 3 6 
+1 7 5 
+4 8   
+
+Belief State 3
+2 3   
+1 4 6 
+7 5 8 
+
+Belief State 4
+  1 6 
+7 3 2 
+5 4 8 
+
+Bước 1/6
+Di chuyển: LEFT
+Chi tiết: Di chuyển: LEFT (đã loại bỏ 2 trạng thái không hợp lệ)
+Số trạng thái khác nhau: 4/4
+
+Belief State 1
+2 3 6 
+1 7 5 
+4   8 
+
+Belief State 2
+2   3 
+1 4 6 
+7 5 8 
+
+Belief State 3
+2 3   
+1 4 6 
+7 5 8 
+
+Belief State 4
+  1 6 
+7 3 2 
+5 4 8 
+
+Bước 2/6
+Di chuyển: LEFT
+Chi tiết: Di chuyển: LEFT
+Số trạng thái khác nhau: 4/4
+
+Belief State 1
+2 3 6 
+1 7 5 
+  4 8 
+
+Belief State 2
+  2 3 
+1 4 6 
+7 5 8 
+
+Belief State 3
+2 3   
+1 4 6 
+7 5 8 
+
+Belief State 4
+  1 6 
+7 3 2 
+5 4 8 
+
+Bước 3/6
+Di chuyển: DOWN
+Chi tiết: Di chuyển: DOWN (đã loại bỏ 1 trạng thái không hợp lệ)
+Số trạng thái khác nhau: 4/4
+
+Belief State 1
+1 2 3 
+  4 6 
+7 5 8 
+
+Belief State 2
+2 3 6 
+1 7 5 
+4 8   
+
+Belief State 3
+2 3   
+1 4 6 
+7 5 8 
+
+Belief State 4
+  1 6 
+7 3 2 
+5 4 8 
+
+Bước 4/6
+Di chuyển: RIGHT
+Chi tiết: Di chuyển: RIGHT
+Số trạng thái khác nhau: 4/4
+
+Belief State 1
+1 2 3 
+4   6 
+7 5 8 
+
+Belief State 2
+2 3 6 
+1 7 5 
+4 8   
+
+Belief State 3
+2 3   
+1 4 6 
+7 5 8 
+
+Belief State 4
+  1 6 
+7 3 2 
+5 4 8 
+
+Bước 5/6
+Di chuyển: DOWN
+Chi tiết: Di chuyển: DOWN
+Số trạng thái khác nhau: 4/4
+
+Belief State 1
+1 2 3 
+4 5 6 
+7   8 
+
+Belief State 2
+2 3 6 
+1 7 5 
+4 8   
+
+Belief State 3
+2 3   
+1 4 6 
+7 5 8 
+
+Belief State 4
+  1 6 
+7 3 2 
+5 4 8 
+
+Bước 6/6
+Di chuyển: RIGHT
+Chi tiết: Di chuyển: RIGHT
+Số trạng thái khác nhau: 4/4
+
+Belief State 1
+1 2 3 
+4 5 6 
+7 8   
+
+Belief State 2
+2 3 6 
+1 7 5 
+4 8   
+
+Belief State 3
+2 3   
+1 4 6 
+7 5 8 
+
+Belief State 4
+  1 6 
+7 3 2 
+5 4 8 
+
+Thời gian xử lý: 0.0235 giây
