@@ -31,8 +31,8 @@
      - [Tìm Kiếm A*](#2-tìm-kiếm-a-a-search)
      - [Tìm Kiếm A* Lặp Sâu](#3-tìm-kiếm-a-lặp-sâu-ida-search)
    - [Thuật toán tìm kiếm cục bộ](#thuật-toán-tìm-kiếm-cục-bộ)
-     - [Thuật Toán Di Truyền](#1-thuật-toán-di-truyền-genetic-algorithm)
-     - [Leo Đồi và Biến Thể](#2-leo-đồi-hill-climbing-và-biến-thể)
+     - [Simple Hill Climbing](#1-leo-đồi-đơn-giản-simple-Hill-climbing)
+     - [Stochastic Hill Climbing](#2-leo-đồi-ngẫu-nhiên-Stochastic-Hill-Climbing)
      - [Mô Phỏng Luyện Kim](#3-mô-phỏng-luyện-kim-simulated-annealing)
    - [Thuật toán CSP](#thuật-toán-csp)
      - [Quay Lui](#1-quay-lui-backtracking)
@@ -40,13 +40,12 @@
      - [Xung Đột Tối Thiểu](#3-xung-đột-tối-thiểu-min-conflicts)
    - [Thuật toán học tăng cường](#thuật-toán-học-tăng-cường)
      - [Q-Learning](#1-q-learning)
-     - [Mạng Q Sâu](#2-mạng-q-sâu-dqn)
      - [SARSA và Độ Dốc Chính Sách](#3-sarsa-và-độ-dốc-chính-sách-policy-gradient)
    - [Thuật toán cho môi trường phức tạp](#thuật-toán-cho-môi-trường-phức-tạp)
      - [Tìm Kiếm Cây AND-OR](#1-tìm-kiếm-cây-and-or)
      - [Tìm Kiếm Trong Môi Trường Quan Sát Một Phần](#2-tìm-kiếm-trong-môi-trường-quan-sát-một-phần)
      - [Tìm Kiếm Trạng Thái Niềm Tin](#3-tìm-kiếm-trạng-thái-niềm-tin-belief-state-search)
-5. [Các hàm heuristic](#các-hàm-heuristic)
+5. [Hàm heuristic](#các-hàm-heuristic)
 6. [Đánh giá và so sánh hiệu suất](#đánh-giá-và-so-sánh-hiệu-suất)
 7. [Hướng dẫn sử dụng](#hướng-dẫn-sử-dụng)
    - [Yêu cầu hệ thống](#yêu-cầu-hệ-thống)
@@ -61,7 +60,6 @@ Mục tiêu của đồ án:
 - Hiểu và cài đặt các thuật toán tìm kiếm trong AI
 - So sánh hiệu suất của các thuật toán
 - Xây dựng giao diện trực quan để minh họa quá trình giải puzzle
-- Phân tích ảnh hưởng của các hàm heuristic đến hiệu quả tìm kiếm
 
 ## CƠ SỞ LÝ THUYẾT
 
@@ -222,11 +220,17 @@ Dự án được tổ chức thành các module chức năng:
 - **Nhược điểm**: Tốn nhiều tài nguyên tính toán
 
 ## CÁC HÀM HEURISTIC
-
 ### 1. Khoảng Cách Manhattan
-- **Mô tả**: Tổng khoảng cách ngang và dọc từ mỗi ô đến vị trí đích của nó
-- **Tính chất**: Admissible (không bao giờ ước lượng cao)
-- **Ưu điểm**: Hiệu suất tốt cho bài toán 8-puzzle, cân bằng giữa tính đơn giản và tính thông tin
+
+- **Mô tả**: Tổng khoảng cách ngang và dọc từ mỗi ô đến vị trí đích của nó.
+- **Công thức**:
+- **h(n) = \sum_{i=1}^{8} \left( |x_i - x_i'| + |y_i - y_i'| \right)
+- **Trong đó:
+- ** $(x_i, y_i)$: vị trí hiện tại của ô số *i*
+-  ** $(x_i', y_i')$: vị trí mục tiêu (đích) của ô số *i*
+- **Tính chất**: Admissible (không bao giờ ước lượng cao hơn chi phí thực).
+- **Ưu điểm**: Hiệu suất tốt cho bài toán 8-puzzle, cân bằng giữa tính đơn giản và tính thông tin.
+
 
 ## ĐÁNH GIÁ VÀ SO SÁNH HIỆU SUẤT
 
@@ -241,17 +245,17 @@ Dự án được tổ chức thành các module chức năng:
 - **Greedy**: Rất nhanh, nhưng không đảm bảo tối ưu
 - **A***: Cân bằng tốt giữa tốc độ và tối ưu
 - **IDA***: Tiết kiệm bộ nhớ hơn A* nhưng vẫn tối ưu
-![Kết quả CSP](results/informed_.gif)
+![Kết quả UNINF](results/informed_.gif)
 ### Thuật toán học tăng cường
 - **SARSA**: Học ổn định, an toàn hơn nhưng dễ rơi vào phương án không tối ưu nếu không khám phá đủ.
 - **Q-Learning**: Tối ưu tốt hơn về dài hạn, nhưng cần nhiều thời gian học và dễ lệch nếu khám phá không hợp lý.
-![Kết quả CSP](results/Reinforcement.gif)
+![Kết quả REINFORCE](results/Reinforcement.gif)
 ### Thuật toán tìm kiếm cục bộ 
 - **Simple Hill Climbing**: Nhanh nhưng dễ bị mắc kẹt ở cực tiểu cục bộ
 - **Simulated Annealing**: Thoát khỏi cực tiểu cục bộ tốt hơn
 - **Beam Search**: Giữ nhiều nhánh tốt cùng lúc, giảm rủi ro kẹt cục bộ nhưng phụ thuộc mạnh vào tham số beam width.
 - **Stochastic Hill Climbing**: Giảm nguy cơ kẹt cục bộ nhờ chọn hướng ngẫu nhiên, nhưng không đảm bảo tìm được lời giải tối ưu.
-- ![Kết quả CSP](results/LOCAL.gif)
+- ![Kết quả LOCAL](results/LOCAL.gif)
 ### Thuật toán tìm kiếm CSP
 - **Backtracking** : Nhanh nhưng không đảm bảo luôn tìm ra giải pháp và tối ưu
 - **Forward checking** : Không đảm bảo luôn tìm ra giải pháp
@@ -262,14 +266,13 @@ Dự án được tổ chức thành các module chức năng:
 - **Tìm kiếm cây AND-OR**: Giải được bài toán nhưng tốn tài nguyên do tạo kế hoạch dư thừa.
 - **Tìm kiếm trong môi trường quan sát một phần**: Không cần thiết vì trạng thái luôn được quan sát đầy đủ.
 - **Tìm kiếm trạng thái niềm tin**: Rất chậm và tốn bộ nhớ vì không có sự không chắc chắn cần xử lý.
-![Kết quả CSP](results/Complex.gif)
+![Kết quả COMPLEX](results/complex.gif)
 
 ## HƯỚNG DẪN SỬ DỤNG
 
 ### Yêu cầu hệ thống
 - Python 3.6 trở lên
 - Tkinter (cho giao diện đồ họa)
-- Các thư viện phụ thuộc: [liệt kê các thư viện]
 
 
 #### Thuật toán không có thông tin:
@@ -321,7 +324,7 @@ python main.py
 
 Đồ án đã triển khai và so sánh một loạt các thuật toán tìm kiếm AI khi áp dụng vào bài toán 8-puzzle. Các kết quả cho thấy:
 
-1. Thuật toán A* với heuristic Linear Conflict thường đạt hiệu suất tốt nhất về tỉ lệ tối ưu/tốc độ
+1. Thuật toán A* với heuristic thường đạt hiệu suất tốt nhất về tỉ lệ tối ưu/tốc độ
 2. Các thuật toán tìm kiếm cục bộ như Simulated Annealing có thể là lựa chọn tốt cho các trạng thái phức tạp
 3. Các thuật toán học tăng cường cần thời gian huấn luyện nhưng có thể hoạt động tốt sau khi được huấn luyện
 
