@@ -291,9 +291,9 @@ python main.py --console --uninformed --all
 #### Thuật toán có thông tin:
 ```
 # Chạy một thuật toán có thông tin cụ thể với một heuristic
-python main.py --console --informed --astar --manhattan
-python main.py --console --informed --greedy --misplaced
-python main.py --console --informed --idastar --linear
+python main.py --console --informed --astar 
+python main.py --console --informed --greedy 
+python main.py --console --informed --idastar 
 
 # So sánh tất cả các thuật toán có thông tin với một heuristic
 python main.py --console --informed --all --manhattan
